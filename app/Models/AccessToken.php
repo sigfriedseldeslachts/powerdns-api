@@ -12,6 +12,8 @@ class AccessToken extends Model
 
     public $incrementing = false;
 
+    protected $fillable = ['secret', 'zones'];
+
     public $casts = [
         'zones' => 'array'
     ];
